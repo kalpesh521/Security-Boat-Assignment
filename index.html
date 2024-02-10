@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form id="loginForm" class="login-form">
+          <h2>Customer Login</h2>
+          <input type="email" id="customerEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="customerPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+          <p class="error" id="customerError"></p>
+          <p>Not a account yet? <a href="signup.html">Sign up</a></p>
+        </form>
+      </div>
+      <div class="form-container">
+        <form id="ownerLoginForm" class="login-form">
+          <h2>Owner Login</h2>
+          <input type="email" id="ownerEmail" placeholder="Email" required />
+          <input
+            type="password"
+            id="ownerPassword"
+            placeholder="Password"
+            required
+          />
+          <button type="submit">Login</button>
+          <p class="error" id="ownerError"></p>
+        </form>
+      </div>
+    </div>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
